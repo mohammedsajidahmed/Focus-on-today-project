@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(242, 248, 237);
+}
+
+.container {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(251, 251, 251);
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 50px;
+  color: rgb(97, 72, 28);
+  margin-bottom: 40px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+span {
+  color: rgb(72, 163, 0);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.title p {
+  font-weight: bolder;
+  font-size: 30px;
+}
+img {
+  width: 40px;
+  margin-left: 15px;
+}
+
+.completion-bar-container {
+  color: rgb(163, 163, 163);
+}
+
+.completion-bar-container p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.progress-bar {
+  width: 90%;
+  background-color: rgb(233, 242, 226);
+  height: 25px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.progress-bar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: small;
+}
+
+.progress-bar-one {
+  width: 33%;
+  background-color: rgb(72, 163, 0);
+  height: 25px;
+  border-radius: 30px;
+}
+
+.progress-bar-two {
+  width: 66%;
+  background-color: rgb(72, 163, 0);
+  height: 25px;
+  border-radius: 30px;
+}
+
+.progress-bar-three {
+  width: 100%;
+  background-color: rgb(72, 163, 0);
+  height: 25px;
+  border-radius: 30px;
+}
+
+.goal-setting p {
+  font-size: 20px;
+  color: red;
+  margin-bottom: 20px;
+}
+
+.goals-list {
+  position: relative;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+}
+
+label {
+  position: absolute;
+  left: 23px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+
+label::after {
+  content: '';
+  width: 12px;
+  height: 6px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 4px;
+  top: 4px;
+  opacity: 0;
+}
+
+.add-goal-checkbox {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 20px;
+  border-radius: 10px;
+  visibility: hidden;
+}
+
+.add-goal-checkbox:checked + label {
+  background-color: #66bb6a;
+  border-color: #66bb6a;
+}
+
+.add-goal-checkbox:checked + label:after {
+  opacity: 1;
+}
+
+.add-goal-input {
+  width: 90%;
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-bottom: 30px;
+  border-radius: 15px;
+  border: 1px solid rgb(233, 230, 230);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+::placeholder {
+  padding-left: 10px;
+  font-size: 16px;
+  color: lightgrey;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.input-strike {
+  color: #66bb6a;
+  font-size: 25px;
+}
+
+.quote {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+}
+
+.heart-img {
+  width: 30px;
+  margin-left: 0;
+}
